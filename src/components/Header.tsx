@@ -32,7 +32,7 @@ const Header = () => {
   };
 
   const connectWallet = async () => {
-    if (typeof window.ethereum === "undefined") {
+    if (typeof (window as any).ethereum === "undefined") {
       toast.error("MetaMask não detectado. Instale a extensão MetaMask para continuar.");
       return;
     }
