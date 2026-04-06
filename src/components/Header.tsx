@@ -104,9 +104,9 @@ const Header = () => {
             variant="outline"
             size="sm"
             className="border-primary/30 text-primary hover:bg-primary/10"
-            onClick={connectWallet}
+            onClick={handleWalletClick}
           >
-            <Wallet className="w-4 h-4 mr-2" />
+            {walletAddress ? <LogOut className="w-4 h-4 mr-2" /> : <Wallet className="w-4 h-4 mr-2" />}
             {walletLabel}
           </Button>
         </div>
