@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
-import { Ticket, Menu, X, Wallet } from "lucide-react";
+import { Ticket, Menu, X, Wallet, LogOut } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { toast } from "sonner";
 
@@ -47,9 +47,18 @@ const Header = () => {
     }
   };
 
+  const disconnectWallet = () => {
+    setWalletAddress(null);
+    toast.success("Wallet desconectada.");
+  };
+
+  const handleWalletClick = walletAddress ? disconnectWallet : connectWallet;
+
   const walletLabel = walletAddress
     ? `${walletAddress.slice(0, 6)}...${walletAddress.slice(-4)}`
     : "Conectar Wallet";
+
+  const WalletIcon = walletAddress ? X : Wallet;
 
   return (
     <motion.header
@@ -95,9 +104,9 @@ const Header = () => {
             variant="outline"
             size="sm"
             className="border-primary/30 text-primary hover:bg-primary/10"
-            onClick={connectWallet}
+            onClick={handleWalletClick}
           >
-            <Wallet className="w-4 h-4 mr-2" />
+            {walletAddress ? <LogOut className="w-4 h-4 mr-2" /> : <Wallet className="w-4 h-4 mr-2" />}
             {walletLabel}
           </Button>
         </div>
@@ -141,9 +150,9 @@ const Header = () => {
               variant="outline"
               size="sm"
               className="border-primary/30 text-primary hover:bg-primary/10 w-full mt-2"
-              onClick={connectWallet}
+              onClick={handleWalletClick}
             >
-              <Wallet className="w-4 h-4 mr-2" />
+              {walletAddress ? <LogOut className="w-4 h-4 mr-2" /> : <Wallet className="w-4 h-4 mr-2" />}
               {walletLabel}
             </Button>
           </nav>
