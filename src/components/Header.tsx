@@ -37,7 +37,7 @@ const Header = () => {
       return;
     }
     try {
-      const accounts = await window.ethereum.request({ method: "eth_requestAccounts" });
+      const accounts = await (window as any).ethereum.request({ method: "eth_requestAccounts" });
       if (accounts && accounts.length > 0) {
         setWalletAddress(accounts[0]);
         toast.success(`Wallet conectada: ${accounts[0].slice(0, 6)}...${accounts[0].slice(-4)}`);
