@@ -33,9 +33,15 @@
 ## 🖼️ Screenshots
 
 <p align="center">
-  <img src="src/assets/event-1.jpg" alt="Evento 1" width="280" />
-  <img src="src/assets/event-2.jpg" alt="Evento 2" width="280" />
-  <img src="src/assets/event-3.jpg" alt="Evento 3" width="280" />
+  ### Tela Principal
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/e2e5ccd3-2234-4630-8db3-68534b4ce489" />
+
+  ### Tela Eventos
+ <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/2c3183ed-2bba-4d1f-8f02-fe24440d457f" />
+
+  ### Como Funciona
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/38e3752d-415a-4787-b2d0-d15c0831592e" />
+
 </p>
 
 ---
