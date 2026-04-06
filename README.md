@@ -34,13 +34,13 @@
 
 <p align="center">
   ### Tela Principal
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/e2e5ccd3-2234-4630-8db3-68534b4ce489" />
+<img width="1603" height="755" alt="image" src="https://github.com/user-attachments/assets/d8dad4c9-fe00-4607-a0fa-9ab9fd0e0884" />
 
   ### Tela Eventos
- <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/2c3183ed-2bba-4d1f-8f02-fe24440d457f" />
+<img width="1900" height="901" alt="image" src="https://github.com/user-attachments/assets/24c6f884-ef76-4cce-8bf6-7cc8fd11aea0" />
 
   ### Como Funciona
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/38e3752d-415a-4787-b2d0-d15c0831592e" />
+<img width="1903" height="895" alt="image" src="https://github.com/user-attachments/assets/960a799c-9ec8-4b3d-a118-c16d781acdd1" />
 
 </p>
 
