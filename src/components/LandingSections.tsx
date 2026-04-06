@@ -68,8 +68,13 @@ const HeroSection = () => (
                 <ArrowRight className="w-4 h-4 ml-2" />
               </Link>
             </Button>
-            <Button asChild variant="outline" size="lg" className="border-primary/30 text-primary hover:bg-primary/10">
-              <Link to="/#how-it-works">Como Funciona</Link>
+            <Button
+              variant="outline"
+              size="lg"
+              className="border-primary/30 text-primary hover:bg-primary/10"
+              onClick={() => document.getElementById("how-it-works")?.scrollIntoView({ behavior: "smooth" })}
+            >
+              Como Funciona
             </Button>
           </div>
         </motion.div>

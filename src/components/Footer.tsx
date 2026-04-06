@@ -26,15 +26,15 @@ const Footer = () => (
         <div>
           <h4 className="font-display font-semibold text-sm mb-3">Empresa</h4>
           <div className="space-y-2 text-sm text-muted-foreground">
-            <span className="block">Sobre</span>
-            <span className="block">Contato</span>
+            <Link to="/about" className="block hover:text-primary transition-colors">Sobre</Link>
+            <Link to="/contact" className="block hover:text-primary transition-colors">Contato</Link>
           </div>
         </div>
         <div>
           <h4 className="font-display font-semibold text-sm mb-3">Legal</h4>
           <div className="space-y-2 text-sm text-muted-foreground">
-            <span className="block">Termos de Uso</span>
-            <span className="block">Privacidade</span>
+            <Link to="/terms" className="block hover:text-primary transition-colors">Termos de Uso</Link>
+            <Link to="/privacy" className="block hover:text-primary transition-colors">Privacidade</Link>
           </div>
         </div>
       </div>
