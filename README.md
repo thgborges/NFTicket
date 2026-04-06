@@ -33,6 +33,7 @@
 ## 🖼️ Screenshots
 
 <p align="center">
+  
   ### Tela Principal
 <img width="1603" height="755" alt="image" src="https://github.com/user-attachments/assets/d8dad4c9-fe00-4607-a0fa-9ab9fd0e0884" />
 
