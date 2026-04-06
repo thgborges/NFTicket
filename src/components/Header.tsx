@@ -47,9 +47,18 @@ const Header = () => {
     }
   };
 
+  const disconnectWallet = () => {
+    setWalletAddress(null);
+    toast.success("Wallet desconectada.");
+  };
+
+  const handleWalletClick = walletAddress ? disconnectWallet : connectWallet;
+
   const walletLabel = walletAddress
     ? `${walletAddress.slice(0, 6)}...${walletAddress.slice(-4)}`
     : "Conectar Wallet";
+
+  const WalletIcon = walletAddress ? X : Wallet;
 
   return (
     <motion.header
